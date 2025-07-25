@@ -1,0 +1,30 @@
+.containerButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.defaultButton {
+  background: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  padding: 0.8rem 8rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.defaultButton:hover {
+  filter: brightness(0.9);
+}
+
+.green {
+  background: var(--primary);
+}
+
+.red {
+  background: var(--error);
+}

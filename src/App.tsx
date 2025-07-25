@@ -1,35 +1,67 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import {
+  HistoryIcon,
+  HouseIcon,
+  PlayCircleIcon,
+  SettingsIcon,
+  SunIcon,
+} from "lucide-react";
+import Button from "./components/button";
+import Heading from "./components/heading";
+import Timer from "./components/timer";
+
+import "./styles/global.css";
+import "./styles/theme.css";
+import Cycles from "./components/cycles";
+import Input from "./components/input";
+import { Container } from "./components/container";
+import DefaultButton from "./components/defaultButton";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Container>
+        <Heading> Chronos </Heading>
+      </Container>
+      <Container>
+        <div className="content">
+          <Button background="var(--primary)">
+            <HouseIcon width={24} height={24} />
+          </Button>
+          <Button background="var(--primary)">
+            <HistoryIcon width={24} height={24} />
+          </Button>
+          <Button background="var(--primary)">
+            <SettingsIcon width={24} height={24} />
+          </Button>
+          <Button background="var(--primary)">
+            <SunIcon width={24} height={24} />
+          </Button>
+        </div>
+      </Container>
+      <Container>
+        <Timer />
+      </Container>
+      <Container>
+        <form className="form" action="">
+          <div className="formRow">
+            <Input type="text" id="meuInput" title="Task" />
+          </div>
+
+          <div className="formRow">
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+
+          <div className="formRow">
+            <Cycles />
+          </div>
+
+          <div className="formRow">
+            <DefaultButton icon={<PlayCircleIcon />} />
+          </div>
+        </form>
+      </Container>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

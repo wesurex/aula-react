@@ -1,0 +1,12 @@
+.button {
+  color: var(--text-over-primary);
+  border: none;
+  border-radius: 14px;
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.button:hover {
+  filter: brightness(80%);
+}
