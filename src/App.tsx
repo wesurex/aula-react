@@ -15,6 +15,7 @@ import Cycles from "./components/cycles";
 import Input from "./components/input";
 import { Container } from "./components/container";
 import DefaultButton from "./components/defaultButton";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -59,6 +60,9 @@ function App() {
             <DefaultButton icon={<PlayCircleIcon />} />
           </div>
         </form>
+      </Container>
+      <Container>
+        <Footer />
       </Container>
     </>
   );

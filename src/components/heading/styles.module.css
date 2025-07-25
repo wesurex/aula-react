@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  padding-top: 2rem;
 }
 
 .button {
@@ -12,7 +13,7 @@
   font-size: 1.6rem;
   border: none;
   margin-bottom: 2rem;
-  transition: 0.5s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .button svg {
@@ -30,7 +31,7 @@
   font-size: 4rem;
   font-weight: 600;
   margin-bottom: 1.6rem;
-  transition: 0.5s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .h1:hover {

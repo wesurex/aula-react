@@ -20,7 +20,6 @@ body {
   );
   color: var(--text-default);
   height: 100dvh;
-  padding: 8rem 0;
 }
 
 .container {
